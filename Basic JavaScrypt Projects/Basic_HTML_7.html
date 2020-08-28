@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic_JavaScript_7</title>
+    <script src="./js/Basic_JavaScript_7.js"></script>
+</head>
+<body>
+    <h1>Basic JavaScript 7:</h1>
+    
+    <!-- Example Global and Local Variable -->
+    <h3>Using local_Function1() with y variable 12 and adding global x variable 17 in function:</h3>
+    <button onclick="local_Function1()">Click here</button>
+    <p id="Local_Global"></p>
+
+    <!-- Example to show local scope error -->
+    <h3>
+        Button below wont work.
+        <br>Using y variable from local_Function1() in separate local_Function2().
+        <br>Press F12 and check Dev Tools console for error:
+    </h3>
+    <button onclick="local_Function2()">Click here</button>
+    <p id="Local_Local"></p>
+
+    <!-- Checks if time is before 11 pm if not is not sleep time. Using if else -->
+    <h3>Is it time to sleep?(using if - else "11pm is bedtime in theory! :)")</h3>
+    <p id="Time_Now" onclick="is_sleep_time()">Click here</p>
+    
+    <!-- Rental Age Check. Minimum age 25. Using if else -->
+    <h3>Input your age to see if you are old enough for a car rental (using if - else):</h3>
+    <input id="Age" value="25" />
+    <p id="What_is_your_age?"></p>
+    <button onclick="Rental_Function()">Click here</button>
+
+    <!-- Time of day Morning Afternoon or Evening.  Using if 'else if' else -->
+    <h3>Time of Day (Using if - else if - else):</h3>
+    <p id="Time_of_day"></p>
+    <button onclick="Time_function()">Click here to get the time.</button>
+</body>
+</html>
