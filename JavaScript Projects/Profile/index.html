@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<!-- Head -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Frank Inberg</title>
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+</head>
+
+>
+
+<body class="Background">
+
+    <!-- Navbar -->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#Slideshow">Slideshow</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <!-- Contact anchor makes openForm/Contact function run -->
+        <a onclick="openForm()"ondblclick="closeForm()">Contact</a>
+    </div>
+
+    <!-- Home  -->
+    <div id=Home>
+        <!-- Breaks inserted to add space between navbar and first heading  -->
+        <br>
+        <br>
+
+        <!-- Video -->
+        <video autoplay muted loop id="Typing_Video">
+            <!-- Makes video autoplay on a loop and muted -->
+            <source src="video/Typing.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+            <!-- This displays if video does not play -->
+        </video>
+    </div>
+
+    <!-- Video text  -->
+    <div class="Video_Text">
+        <h1 style="color:white">Frank Inberg's Portfolio</h1>
+        <p>
+            <strong>
+                <center>
+                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                        <br>No playwright, no stage direcgtor, no emperor, however powerful, has ever exercised such
+                        absolute authority to arrange a stage
+                        <br>or field of battle and to commad such unswervingly dutiful actors or troops.
+                    </q>
+                    <br>-Joseph Weizenbaum<br>
+                    <br>
+                    My name is Frank Inberg, Welcome to my portfolio website. <br>
+                    On it, I will tell you about my background and eperience.<br>
+                    <br>Thank you for stopping by and enjoy!
+                </center>
+            </strong>
+        </p>
+
+    </div>
+
+    <!--  Slideshow section -->
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">1/ 6</div>
+                    <img src="./images/me.jpg" alt="MyPicture" class="Slide_Show_Images">
+                    <div class="text">I am available to assist you on your project. </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="Slide_Number">2 / 6</div>
+                    <img src="images/HTML_CSS_and_JavaScript.jpeg" alt="HTML" class="Slide_Show_Images">
+                    <div class="text">I am a currently training to be a full-stack software developer,<br> in:<br>HTML, CSS, JavaScript,
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="Slide_Number">3 / 6</div>
+                    <img src="images/Python.png" alt="Python" class="Slide_Show_Images">
+                    <div class="text">the popular programming language Python,</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="Slide_Number">4 / 6</div>
+                    <img src="images/C_Sharp_and_Dot_NET.png" alt="c#_Dot_NET" class="Slide_Show_Images">
+                    <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="Slide_Number">5 / 6</div>
+                    <img src="images/SQL_and_Database.jpg" alt="SQL" class="Slide_Show_Images">
+                    <div class="text">back end development, database and SQL.</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">6 / 6</div>
+                    <img class=Slide_Show_Images" src="images/Coding_1.jpg" alt="Coding" style="width:100%">
+                    <div class="text">
+                        <a href="#Contact" onclick="openForm()" style="color:white">Contact me now!</a>
+                    </div>
+                </div>
+
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section-->
+    <div class="Row" id="About">
+        <div class="Column_2">
+            <!-- Left column -->
+            <img src="images/Development.jpg" alt="Laptop">
+        </div>
+
+        <div class="Column_1">
+            <h2>About</h2>
+            <p>I am a software developer who loves to code!
+                <br><br>
+                I am a student of
+                <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer
+                Boot Camp, and trained and experienced in the following we and programming languages: HTML, CSS,
+                JavaScript, C# and more. <br><br>I am a training to be a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+            </p>
+        </div>
+    </div>
+
+    <!-- GitHub section-->
+    <div class="Row" id="GitHub">
+        <!-- Left column -->
+        <div class="Column_1">
+            <h1>GitHub</h1>
+            <p>You can view my coding projects on my GitHub profile here:<br></p>
+            <center>
+                <a href="https://github.com/fijiti" target="_blank" alt="My GitHub">My GitHub</a>
+            </center>
+        </div>
+        <!-- Right column  -->
+        <div class="Column_2">
+            <a href="https://github.com/fijiti" target="_blank">
+                <img src="/images/GitHub.png" alt="My GitHub">
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact secton -->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button"> CONTACT
+        </button>
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+                <!-- ere we are using a free 
+            online service from https://formspree.io/ to send our 
+            contact form to an email address of our choosing - note: it will not run unless live on hte internet, you have to push it to your online website first -->
+                <h1>Contact</h1>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Type your name here" name="name" required>
+
+                <label for="phone"><b>Phone</b></label>
+                <input type="text" placeholder="Enter your phone number here" name="phone">
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Type your email address here" name="email" required>
+
+                <label for="message"><b>Message</b></label>
+                <input type="text" placeholder="Type your message here" name="message">
+
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p>
+            <center>&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/">The Tech Academy</a>
+            </center>
+        </p>
+    </footer>
+    <script src="js/portfolio.js"></script>
+
+</body>
+
+</html>
